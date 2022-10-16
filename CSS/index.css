@@ -1,0 +1,223 @@
+/* the start of global */
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Cairo Play", cursive;
+}
+/* the end of global style */
+/* header start */
+header {
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+header .logo {
+  padding-top: 100px;
+}
+.logo :first-child {
+  padding-right: 25px;
+}
+.logo :last-child {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: calc(15% + 20px);
+  height: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #505d75;
+  opacity: 50px;
+}
+.heading h1 {
+  font-weight: 600;
+}
+.heading p {
+  padding-bottom: 80px;
+  color: #acacac;
+  font-weight: 400;
+}
+header .counter {
+  padding-bottom: 180px;
+  /* margin-bottom: 180px; */
+}
+header .counter .number {
+  font-size: 40px;
+  color: white;
+}
+header .counter .period {
+  font-size: 25px;
+}
+#doUWantEmail {
+  font-size: small;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-right: -30px;
+  padding-bottom: 20px;
+}
+.send-notefication form {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0%;
+}
+.input-group {
+  max-width: 35%;
+  margin-top: 0%;
+}
+.send-notefication .input-group input {
+  border-radius: 0%;
+  border: 2px solid #e6e6e6;
+}
+.send-notefication button {
+  padding: 10px 30px 10px 30px;
+  border-radius: 0%;
+  background-color: #ffce00;
+}
+/* header end */
+/* main start  */
+main section h1 {
+  margin: 100px 215px 100px auto;
+}
+.left-card {
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  border: 4px solid #acacac25;
+}
+.cards {
+  padding-bottom: 100px;
+  align-items: center;
+}
+.right-card {
+  background-color: white;
+  display: flex;
+  padding: 30px;
+  margin-bottom: 15px;
+  border: 4px solid #acacac25;
+  align-items: center;
+}
+.cards img {
+  margin: 40px 25px 40px 25px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.right-cards .content {
+  text-align: start;
+}
+.left-cards .content {
+  text-align: end;
+}
+.content p {
+  opacity: 75%;
+}
+/* main end  */
+/* footer start  */
+footer {
+  background-image: url(../imgs/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.mail-footer {
+  background-color: #f5d443cc;
+  opacity: 85%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.mail-footer h2 {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.mail-footer .send-notefication {
+  padding-bottom: 60px;
+}
+
+.mail-footer .send-notefication button {
+  background-color: #393939;
+  padding: 12px 30px 12px 30px;
+}
+.social-footer {
+  background-color: #070808;
+  opacity: 75%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.social-footer h2 {
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+.social-footer .social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.social-footer .social-media div {
+  background-color: #3b3f3f;
+  padding: 25px;
+  margin: 15px;
+}
+.social-footer .social-media div:hover {
+  background-color: #ffce00;
+  transition: 0.5s;
+}
+.social-footer .social-media div i {
+  color: white;
+}
+.social-footer .social-media div:hover > i {
+  color: #1a1f20;
+  transition: 0.3s;
+}
+.social-footer hr {
+  width: 50%;
+  margin: 0px auto 30px;
+  color: #7c8384;
+}
+.social-footer .contact-mail {
+  padding-bottom: 30px;
+}
+.social-footer .contact-mail i {
+  color: #ffce00;
+}
+.social-footer .contact-mail a {
+  text-decoration: none;
+  color: #b4b4b4;
+}
+/* footer end  */
+@media (max-width: 992px) {
+  .logo :last-child {
+    width: calc(25% + 20px);
+  }
+  main section h1 {
+    margin-right: auto;
+    text-align: center;
+  }
+  .input-group {
+    max-width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .input-group {
+    max-width: 75%;
+  }
+  .logo :last-child {
+    width: calc(45% + 20px);
+  }
+  .right-card,
+  .left-card {
+    flex-direction: column;
+  }
+  .content {
+    text-align: center !important;
+  }
+  .content h3 {
+    font-size: 22px;
+  }
+  .mail-footer h2 {
+    font-size: 20px;
+  }
+}
