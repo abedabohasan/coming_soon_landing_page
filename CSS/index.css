@@ -37,7 +37,6 @@ header .logo {
 }
 header .counter {
   padding-bottom: 180px;
-  /* margin-bottom: 180px; */
 }
 header .counter .number {
   font-size: 40px;
